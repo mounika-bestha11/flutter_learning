@@ -7,27 +7,14 @@ class MyFirstApp extends StatelessWidget {
   TextEditingController editingController = TextEditingController();
   @override
   Widget build(BuildContext context) {
+    var JavaScriptMode;
     return Scaffold(
-      appBar: AppBar(title: Text('first screen')),
-      body: Container(
-        child: Column(
-          children: [
-            TextField(
-                controller: editingController,
-                keyboardType: TextInputType.emailAddress,
-                decoration: InputDecoration(
-                  hintText: 'Enter Email',
-                  border: OutlineInputBorder(),
-                  suffixIcon: Icon(Icons.mail),
-                )),
-            RaisedButton(
-                onPressed: () {
-                  print('   +editingcontroller.text');
-                },
-                child: Text('get data'))
-          ],
-        ),
-      ),
-    );
+        appBar: AppBar(title: Text('Programming telugulo')),
+        body: WebView(
+          initialurl: 'https:\\flutter .dev',
+          javascriptmode: JavaScriptMode.unrestricted,
+        ));
   }
+
+  WebView({required String initialurl, required javascriptmode}) {}
 }
