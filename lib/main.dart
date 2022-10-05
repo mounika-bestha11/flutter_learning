@@ -1,22 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:learn/bottom_navigation_bar.dart';
-import 'package:learn/tab_bar.dart';
+import 'package:learn/Radio_button.dart';
 
 void main() => runApp(const MyApp());
 
-class MyApp extends StatefulWidget {
+class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
-
-  @override
-  State<MyApp> createState() => _MyAppState();
-}
-
-class _MyAppState extends State<MyApp> {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      // Application name
       title: ' Stateful v/s Stateless Widget',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
@@ -24,8 +15,7 @@ class _MyAppState extends State<MyApp> {
         // you want
         primarySwatch: Colors.blue,
       ),
-
-      home: MyTabBar(),
+      home: MyFirstPage(),
     );
   }
 }
