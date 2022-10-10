@@ -1,8 +1,6 @@
 //import 'dart:html';
 
 import 'package:flutter/material.dart';
-import 'package:fluttertoast/fluttertoast.dart';
-import 'package:toast/toast.dart';
 
 class MyToastPage extends StatelessWidget {
   const MyToastPage({Key? key}) : super(key: key);
@@ -16,6 +14,7 @@ class MyToastPage extends StatelessWidget {
         child: RaisedButton(
             child: Text('Toast Demo'),
             onPressed: () {
+              var Fluttertoast;
               Fluttertoast.showToast(msg: 'Toast Demo');
             }),
       ),
