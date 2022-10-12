@@ -1,10 +1,17 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
-import 'package:learn/screens/home_screen.dart';
+import 'package:learn/models/date_picker.dart';
+import 'package:learn/models/provider_state_management.dart';
+import 'package:learn/timer_provider.dart';
+import 'package:flutter_provider/flutter_provider.dart';
+import 'package:provider/provider.dart';
 
 //import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
-void main() => runApp(const MyApp());
+void main() => runApp(ChangeNotifierProvider(
+      create: (context) => TimerProvider(),
+      child: MyApp(),
+    ));
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -18,7 +25,7 @@ class MyApp extends StatelessWidget {
         // you want
         primarySwatch: Colors.blue,
       ),
-      home: HomeScreen(),
+      home: MyProviderState(),
     );
   }
 }

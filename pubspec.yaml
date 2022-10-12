@@ -20,17 +20,22 @@ dependencies:
   
   flutter:
     sdk: flutter
-  #toast: ^0.3.0
-  #fluttertoast: ^8.0.9
-  webview_flutter: ^3.0.4
+    
+    
+  
+  
   flutter_launcher_icons: ^0.10.0
   flutter_country_picker: ^0.1.6
+  
   
   country_code_picker: ^2.0.2
   fl_country_code_picker: ^0.0.3
   country_phone_code_picker: ^0.0.34
   country_pickers: ^2.0.0
   youtube_player_flutter: ^8.0.0
+  flutter_provider: ^2.1.0
+  property_change_notifier: ^0.3.0
+  provider: ^6.0.4
 
 flutter_icons:
     android: "launcher_icon"
